@@ -68,48 +68,48 @@ export function DashboardStats() {
 
       {/* KPIs principaux */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Étudiants Actifs</CardTitle>
-            <Users className="h-4 w-4 text-amber-700" />
+            <Users className="h-4 w-4 text-blue-700" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-amber-900">{activeStudents}</div>
+            <div className="text-2xl font-bold text-blue-900">{activeStudents}</div>
             <p className="text-xs text-slate-600">
               Sur {totalStudents} inscrits ({filteredData.students.length} filtrés)
             </p>
           </CardContent>
         </Card>
 
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Taux de Dépôt</CardTitle>
-            <FileCheck className="h-4 w-4 text-green-600" />
+            <FileCheck className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-amber-900">{documentSubmissionRate}%</div>
+            <div className="text-2xl font-bold text-blue-900">{documentSubmissionRate}%</div>
             <p className="text-xs text-slate-600">Documents remis à temps</p>
           </CardContent>
         </Card>
 
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Deadlines en Retard</CardTitle>
-            <Clock className="h-4 w-4 text-red-600" />
+            <Clock className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-amber-900">{overdueDeadlines}</div>
+            <div className="text-2xl font-bold text-blue-900">{overdueDeadlines}</div>
             <p className="text-xs text-slate-600">Nécessitent un suivi</p>
           </CardContent>
         </Card>
 
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Progression Moyenne</CardTitle>
-            <TrendingUp className="h-4 w-4 text-purple-600" />
+            <TrendingUp className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-amber-900">{averageProgress}%</div>
+            <div className="text-2xl font-bold text-blue-900">{averageProgress}%</div>
             <p className="text-xs text-slate-600">Objectif: 85%</p>
           </CardContent>
         </Card>
@@ -117,9 +117,9 @@ export function DashboardStats() {
 
       {/* Données filtrées */}
       {progressFilter !== "all" && (
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader>
-            <CardTitle className="text-amber-900">Résultats Filtrés</CardTitle>
+            <CardTitle className="text-blue-900">Résultats Filtrés</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 gap-4">

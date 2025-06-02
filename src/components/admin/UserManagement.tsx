@@ -94,16 +94,16 @@ export function UserManagement() {
   };
 
   return (
-    <Card className="border-amber-200">
+    <Card className="border-blue-200">
       <CardHeader>
         <div className="flex justify-between items-center">
           <div>
-            <CardTitle className="text-amber-900">Gestion des Utilisateurs</CardTitle>
+            <CardTitle className="text-blue-900">Gestion des Utilisateurs</CardTitle>
             <CardDescription>Créer, modifier et gérer les comptes utilisateurs</CardDescription>
           </div>
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
-              <Button className="bg-amber-700 hover:bg-amber-800" onClick={() => {
+              <Button className="bg-blue-700 hover:bg-blue-800" onClick={() => {
                 setEditingUser(null);
                 setFormData({ name: "", email: "", role: "student", status: "active" });
               }}>
@@ -166,7 +166,7 @@ export function UserManagement() {
                   <Button type="button" variant="outline" onClick={() => setIsDialogOpen(false)}>
                     Annuler
                   </Button>
-                  <Button type="submit" className="bg-amber-700 hover:bg-amber-800">
+                  <Button type="submit" className="bg-blue-700 hover:bg-blue-800">
                     {editingUser ? "Modifier" : "Créer"}
                   </Button>
                 </div>
@@ -192,8 +192,8 @@ export function UserManagement() {
           {filteredUsers.map((user) => (
             <div key={`${user.role}-${user.id}`} className="flex items-center justify-between p-3 border rounded-lg">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
-                  <span className="text-amber-700 font-semibold">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                  <span className="text-blue-700 font-semibold">
                     {user.name.charAt(0).toUpperCase()}
                   </span>
                 </div>

@@ -86,7 +86,7 @@ export function Settings() {
   const getActionTypeColor = (type: string) => {
     switch (type) {
       case "create": return "text-green-600";
-      case "update": return "text-amber-700";
+      case "update": return "text-blue-700";
       case "delete": return "text-red-600";
       case "access": return "text-gray-600";
       default: return "text-gray-600";
@@ -101,9 +101,9 @@ export function Settings() {
   return (
     <div className="space-y-6">
       {/* Paramètres généraux */}
-      <Card className="border-amber-200">
+      <Card className="border-blue-200">
         <CardHeader>
-          <CardTitle className="text-amber-900 flex items-center gap-2">
+          <CardTitle className="text-blue-900 flex items-center gap-2">
             <SettingsIcon className="h-5 w-5" />
             Paramètres Généraux
           </CardTitle>
@@ -152,7 +152,7 @@ export function Settings() {
             />
           </div>
 
-          <Button onClick={handleSaveSettings} className="bg-amber-700 hover:bg-amber-800">
+          <Button onClick={handleSaveSettings} className="bg-blue-700 hover:bg-blue-800">
             <Save className="mr-2 h-4 w-4" />
             Sauvegarder les paramètres
           </Button>
@@ -160,9 +160,9 @@ export function Settings() {
       </Card>
 
       {/* Paramètres système */}
-      <Card className="border-amber-200">
+      <Card className="border-blue-200">
         <CardHeader>
-          <CardTitle className="text-amber-900 flex items-center gap-2">
+          <CardTitle className="text-blue-900 flex items-center gap-2">
             <Shield className="h-5 w-5" />
             Paramètres Système
           </CardTitle>
@@ -220,11 +220,11 @@ export function Settings() {
       </Card>
 
       {/* Journal d'activité */}
-      <Card className="border-amber-200">
+      <Card className="border-blue-200">
         <CardHeader>
           <div className="flex justify-between items-center">
             <div>
-              <CardTitle className="text-amber-900 flex items-center gap-2">
+              <CardTitle className="text-blue-900 flex items-center gap-2">
                 <Database className="h-5 w-5" />
                 Journal d'Activité
               </CardTitle>
@@ -266,9 +266,9 @@ export function Settings() {
       </Card>
 
       {/* Gestion des utilisateurs en masse */}
-      <Card className="border-amber-200">
+      <Card className="border-blue-200">
         <CardHeader>
-          <CardTitle className="text-amber-900 flex items-center gap-2">
+          <CardTitle className="text-blue-900 flex items-center gap-2">
             <Users className="h-5 w-5" />
             Gestion en Masse
           </CardTitle>

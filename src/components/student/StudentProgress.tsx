@@ -48,7 +48,7 @@ export function StudentProgress() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Ma Progression</CardTitle>
-            <Target className="h-4 w-4 text-amber-700" />
+            <Target className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{studentProgress.overallProgress}%</div>
@@ -60,7 +60,7 @@ export function StudentProgress() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Mon Étape Actuelle</CardTitle>
-            <Clock className="h-4 w-4 text-orange-600" />
+            <Clock className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
             <div className="text-lg font-bold">Business Model Canvas</div>
@@ -96,7 +96,7 @@ export function StudentProgress() {
       {studentGroup && (
         <Card>
           <CardHeader>
-            <CardTitle className="text-amber-900 flex items-center gap-2">
+            <CardTitle className="text-blue-800 flex items-center gap-2">
               <BarChart3 className="h-5 w-5" />
               Progression de mon groupe: {studentGroup.name}
             </CardTitle>
@@ -104,7 +104,7 @@ export function StudentProgress() {
           <CardContent>
             <div className="space-y-4">
               {/* Progression moyenne du groupe */}
-              <div className="flex items-center justify-between p-3 bg-amber-50 rounded-lg">
+              <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
                 <div>
                   <h3 className="font-medium">Progression moyenne</h3>
                   <p className="text-sm text-muted-foreground">

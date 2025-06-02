@@ -118,7 +118,7 @@ export function StudentPathway() {
       case "completed":
         return <CheckCircle className="h-5 w-5 text-green-600" />;
       case "current":
-        return <Clock className="h-5 w-5 text-orange-600" />;
+        return <Clock className="h-5 w-5 text-blue-600" />;
       default:
         return <Lock className="h-5 w-5 text-gray-400" />;
     }
@@ -129,7 +129,7 @@ export function StudentPathway() {
       case "completed":
         return "bg-green-100 border-green-300";
       case "current":
-        return "bg-orange-100 border-orange-300";
+        return "bg-blue-100 border-blue-300";
       default:
         return "bg-gray-100 border-gray-300";
     }
@@ -250,7 +250,7 @@ export function StudentPathway() {
                             </Badge>
                           </div>
                           {deliverable.feedback && (
-                            <div className="mt-2 p-2 bg-amber-50 rounded text-sm">
+                            <div className="mt-2 p-2 bg-blue-50 rounded text-sm">
                               <strong>Feedback:</strong> {deliverable.feedback}
                             </div>
                           )}

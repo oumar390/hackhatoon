@@ -94,7 +94,7 @@ export function ResourcesLibrary() {
       case "video":
         return <Video className="h-8 w-8 text-purple-500" />;
       case "image":
-        return <Image className="h-8 w-8 text-amber-600" />;
+        return <Image className="h-8 w-8 text-blue-600" />;
       default:
         return <BookOpen className="h-8 w-8 text-gray-500" />;
     }
@@ -267,7 +267,7 @@ export function ResourcesLibrary() {
               </div>
               
               <Button 
-                className="w-full" 
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white" 
                 onClick={() => handleDownload(resource.id, resource.title)}
               >
                 <Download className="h-4 w-4 mr-2" />

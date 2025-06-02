@@ -125,46 +125,46 @@ export function ProgressTracking() {
     <div className="space-y-6">
       {/* KPIs */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Progression Moyenne</CardTitle>
-            <TrendingUp className="h-4 w-4 text-amber-700" />
+            <TrendingUp className="h-4 w-4 text-blue-700" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-amber-900">{averageProgress}%</div>
+            <div className="text-2xl font-bold text-blue-900">{averageProgress}%</div>
             <p className="text-xs text-slate-600">+5% depuis le mois dernier</p>
           </CardContent>
         </Card>
 
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Étudiants Actifs</CardTitle>
             <Users className="h-4 w-4 text-green-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-amber-900">{students.filter(s => s.status === "active").length}</div>
+            <div className="text-2xl font-bold text-blue-900">{students.filter(s => s.status === "active").length}</div>
             <p className="text-xs text-slate-600">Sur {students.length} inscrits</p>
           </CardContent>
         </Card>
 
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Projets en Retard</CardTitle>
             <Clock className="h-4 w-4 text-red-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-amber-900">{overdueCount}</div>
+            <div className="text-2xl font-bold text-blue-900">{overdueCount}</div>
             <p className="text-xs text-slate-600">Nécessitent un suivi</p>
           </CardContent>
         </Card>
 
-        <Card className="border-amber-200">
+        <Card className="border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Taux de Réussite</CardTitle>
             <BarChart3 className="h-4 w-4 text-purple-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-amber-900">87%</div>
+            <div className="text-2xl font-bold text-blue-900">87%</div>
             <p className="text-xs text-slate-600">Objectif: 85%</p>
           </CardContent>
         </Card>
@@ -175,7 +175,7 @@ export function ProgressTracking() {
         <CardHeader>
           <div className="flex justify-between items-center">
             <div>
-              <CardTitle className="text-amber-900 flex items-center gap-2">
+              <CardTitle className="text-blue-900 flex items-center gap-2">
                 <BarChart3 className="h-5 w-5" />
                 Suivi de Progression Détaillé
               </CardTitle>
@@ -283,7 +283,7 @@ export function ProgressTracking() {
               
               <div>
                 <h4 className="font-medium mb-2">Recommandations</h4>
-                <div className="text-sm bg-amber-50 p-3 rounded">
+                <div className="text-sm bg-blue-50 p-3 rounded">
                   {selectedStudent.status === "En retard" 
                     ? "Cet étudiant nécessite un suivi rapproché. Planifier un entretien individuel."
                     : selectedStudent.status === "Avancé"
@@ -300,7 +300,7 @@ export function ProgressTracking() {
       {/* Progression par groupe */}
       <Card className="border-blue-200">
         <CardHeader>
-          <CardTitle className="text-amber-900 flex items-center gap-2">
+          <CardTitle className="text-blue-900 flex items-center gap-2">
             <BookOpen className="h-5 w-5" />
             Progression par Groupe
           </CardTitle>

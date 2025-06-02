@@ -139,7 +139,7 @@ export function StudentMessages() {
                     <div
                       key={conv.id}
                       className={`p-4 border-b cursor-pointer hover:bg-gray-50 transition-colors ${
-                        selectedConversationId === conv.id ? 'bg-amber-50 border-l-4 border-l-amber-700' : ''
+                        selectedConversationId === conv.id ? 'bg-blue-50 border-l-4 border-l-blue-700' : ''
                       }`}
                       onClick={() => setSelectedConversationId(conv.id)}
                     >
@@ -196,14 +196,14 @@ export function StudentMessages() {
                         }`}
                       >
                         {message.sender === 'coach' && (
-                          <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
-                            <UserCheck className="h-4 w-4 text-amber-700" />
+                          <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                            <UserCheck className="h-4 w-4 text-blue-700" />
                           </div>
                         )}
                         <div
                           className={`max-w-[80%] p-3 rounded-lg ${
                             message.sender === 'student'
-                              ? 'bg-amber-700 text-white'
+                              ? 'bg-blue-600 text-white'
                               : 'bg-gray-100 text-gray-900'
                           }`}
                         >
@@ -221,7 +221,7 @@ export function StudentMessages() {
                           </div>
                         </div>
                         {message.sender === 'student' && (
-                          <div className="w-8 h-8 bg-amber-700 rounded-full flex items-center justify-center">
+                          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
                             <User className="h-4 w-4 text-white" />
                           </div>
                         )}

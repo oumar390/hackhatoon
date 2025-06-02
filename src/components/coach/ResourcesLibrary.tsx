@@ -170,7 +170,7 @@ export function ResourcesLibrary() {
                 <CardHeader className="pb-3">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <div className="rounded-full p-1 bg-amber-100">
+                      <div className="rounded-full p-1 bg-blue-100">
                         {getResourceIcon(resource.type)}
                       </div>
                       <CardTitle className="text-lg">{resource.title}</CardTitle>
@@ -197,7 +197,7 @@ export function ResourcesLibrary() {
                   <div className="text-xs text-muted-foreground">
                     Ajouté le {new Date(resource.dateAdded).toLocaleDateString('fr-FR')}
                   </div>
-                  <Button variant="outline" size="sm" className="gap-1">
+                  <Button variant="outline" size="sm" className="gap-1 border-blue-200 text-blue-700 hover:bg-blue-50 hover:text-blue-800">
                     <Download className="h-3 w-3" />
                     Télécharger
                   </Button>
@@ -223,12 +223,12 @@ export function ResourcesLibrary() {
                     <CardHeader className="pb-3">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <div className="rounded-full p-1 bg-amber-100">
+                          <div className="rounded-full p-1 bg-blue-100">
                             {getResourceIcon(resource.type)}
                           </div>
                           <CardTitle className="text-lg">{resource.title}</CardTitle>
                         </div>
-                        <Button variant="ghost" size="icon">
+                        <Button variant="ghost" size="icon" className="text-blue-600 hover:text-blue-800 hover:bg-blue-50">
                           <Bookmark className="h-4 w-4" />
                         </Button>
                       </div>
@@ -250,7 +250,7 @@ export function ResourcesLibrary() {
                       <div className="text-xs text-muted-foreground">
                         Ajouté le {new Date(resource.dateAdded).toLocaleDateString('fr-FR')}
                       </div>
-                      <Button variant="outline" size="sm" className="gap-1">
+                      <Button variant="outline" size="sm" className="gap-1 border-blue-200 text-blue-700 hover:bg-blue-50 hover:text-blue-800">
                         <Download className="h-3 w-3" />
                         Télécharger
                       </Button>

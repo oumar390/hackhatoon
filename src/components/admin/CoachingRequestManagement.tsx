@@ -19,7 +19,7 @@ export function CoachingRequestManagement() {
   const getStatusBadge = (status: string) => {
     switch(status) {
       case "pending":
-        return <Badge variant="outline" className="bg-amber-50 text-amber-700">En attente</Badge>;
+        return <Badge variant="outline" className="bg-blue-50 text-blue-700">En attente</Badge>;
       case "approved":
         return <Badge variant="outline" className="bg-green-50 text-green-700">Approuvée</Badge>;
       case "rejected":

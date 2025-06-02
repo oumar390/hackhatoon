@@ -105,7 +105,7 @@ export function CoachFeedback() {
     if (diffDays >= 3) {
       return <Badge variant="outline" className="bg-red-50 text-red-700">Urgent</Badge>;
     } else if (diffDays >= 1) {
-      return <Badge variant="outline" className="bg-amber-50 text-amber-700">À traiter</Badge>;
+      return <Badge variant="outline" className="bg-blue-50 text-blue-700">À traiter</Badge>;
     } else {
       return <Badge variant="outline" className="bg-green-50 text-green-700">Récent</Badge>;
     }
@@ -114,7 +114,7 @@ export function CoachFeedback() {
   const getFileIcon = (type: string) => {
     switch (type) {
       case "document":
-        return <FileText className="h-4 w-4 text-amber-700" />;
+        return <FileText className="h-4 w-4 text-blue-700" />;
       case "presentation":
         return <File className="h-4 w-4 text-purple-600" />;
       case "spreadsheet":
@@ -128,10 +128,11 @@ export function CoachFeedback() {
     if (grade >= 16) {
       return <Badge className="bg-green-100 text-green-800 hover:bg-green-100">{grade}/20</Badge>;
     } else if (grade >= 12) {
-      return <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-100">{grade}/20</Badge>;
+      return <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">{grade}/20</Badge>;
     } else if (grade >= 8) {
-      return <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-100">{grade}/20</Badge>;
+      return <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">{grade}/20</Badge>;
     } else {
+      return <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">{grade}/20</Badge>;
       return <Badge className="bg-red-100 text-red-800 hover:bg-red-100">{grade}/20</Badge>;
     }
   };
@@ -154,7 +155,7 @@ export function CoachFeedback() {
       <div className="flex items-center justify-between">
         <h2 className="text-3xl font-bold tracking-tight">Corrections & Feedbacks</h2>
         <div className="flex items-center space-x-2">
-          <Badge variant="outline" className="bg-amber-50">
+          <Badge variant="outline" className="bg-blue-50">
             {filteredPendingAssignments.length} en attente
           </Badge>
           <Badge variant="outline" className="bg-green-50">
@@ -229,7 +230,9 @@ export function CoachFeedback() {
                             <Dialog>
                               <DialogTrigger asChild>
                                 <Button 
-                                  size="sm"  
+                                  size="sm"
+                                  variant="default"
+                                  className="bg-blue-600 hover:bg-blue-700 text-white"
                                   onClick={() => setSelectedAssignment(assignment.id)}
                                 >
                                   Corriger
@@ -299,7 +302,7 @@ export function CoachFeedback() {
             <CardContent>
               {filteredCompletedAssignments.length === 0 ? (
                 <div className="text-center py-10">
-                  <Clock className="h-12 w-12 text-amber-500 mx-auto mb-4" />
+                  <Clock className="h-12 w-12 text-blue-500 mx-auto mb-4" />
                   <h3 className="text-lg font-medium">Aucun historique</h3>
                   <p className="text-muted-foreground">
                     Vous n'avez pas encore corrigé de travaux.

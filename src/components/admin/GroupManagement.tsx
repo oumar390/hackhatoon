@@ -78,16 +78,16 @@ export function GroupManagement() {
   };
 
   return (
-    <Card className="border-amber-200">
+    <Card className="border-blue-200">
       <CardHeader>
         <div className="flex justify-between items-center">
           <div>
-            <CardTitle className="text-amber-900">Gestion des Groupes</CardTitle>
+            <CardTitle className="text-blue-900">Gestion des Groupes</CardTitle>
             <CardDescription>Créer et gérer les groupes de projet</CardDescription>
           </div>
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
-              <Button className="bg-amber-700 hover:bg-amber-800" onClick={() => {
+              <Button className="bg-blue-600 hover:bg-blue-700" onClick={() => {
                 setEditingGroup(null);
                 setFormData({ name: "", pathway: "pre-incubation", coachId: null, studentIds: [] });
               }}>
@@ -165,7 +165,7 @@ export function GroupManagement() {
                   <Button type="button" variant="outline" onClick={() => setIsDialogOpen(false)}>
                     Annuler
                   </Button>
-                  <Button type="submit" className="bg-amber-700 hover:bg-amber-800">
+                  <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
                     {editingGroup ? "Modifier" : "Créer"}
                   </Button>
                 </div>
@@ -180,8 +180,8 @@ export function GroupManagement() {
             <div key={group.id} className="border rounded-lg p-4">
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                    <Users className="h-5 w-5 text-amber-700" />
+                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Users className="h-5 w-5 text-blue-700" />
                   </div>
                   <div>
                     <h3 className="font-semibold">{group.name}</h3>

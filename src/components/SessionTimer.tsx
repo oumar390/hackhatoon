@@ -72,13 +72,13 @@ export function SessionTimer({ className = "" }: SessionTimerProps) {
   };
   
   return (
-    <div className={`flex items-center gap-2 p-3 border-t border-amber-200 ${isActive ? 'bg-amber-50' : 'bg-amber-100/30'} text-xs ${className}`}>
+    <div className={`flex items-center gap-2 p-3 border-t border-blue-200 ${isActive ? 'bg-blue-50' : 'bg-blue-100/30'} text-xs ${className}`}>
       <button 
         onClick={toggleTimer}
         title={isActive ? 'Mettre en pause' : 'Reprendre'}
-        className="hover:bg-amber-100 p-1 rounded"
+        className="hover:bg-blue-100 p-1 rounded"
       >
-        <Clock className="h-4 w-4 text-amber-700" />
+        <Clock className="h-4 w-4 text-blue-600" />
       </button>
       <span className={`${isActive ? 'text-slate-700' : 'text-slate-500'}`}>
         Session: {formatTime(sessionTime)}
@@ -86,9 +86,9 @@ export function SessionTimer({ className = "" }: SessionTimerProps) {
       <button
         onClick={resetTimer}
         title="Réinitialiser"
-        className="hover:bg-amber-100 p-1 rounded ml-auto"
+        className="hover:bg-blue-100 p-1 rounded ml-auto"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-amber-700">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-600">
           <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
           <path d="M3 3v5h5" />
         </svg>

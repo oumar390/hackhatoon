@@ -13,8 +13,8 @@
     --popover: 40 25% 98%;
     --popover-foreground: 35 80% 20%;
 
-    --primary: 35 60% 35%;
-    --primary-foreground: 40 70% 95%;
+    --primary: 215 70% 45%;
+    --primary-foreground: 210 40% 98%;
 
     --secondary: 280 50% 50%;
     --secondary-foreground: 0 0% 100%;
@@ -38,7 +38,7 @@
 
     --sidebar-foreground: 40 70% 95%;
 
-    --sidebar-primary: 35 80% 45%;
+    --sidebar-primary: 215 80% 45%;
 
     --sidebar-primary-foreground: 0 0% 100%;
 
@@ -61,7 +61,7 @@
     --popover: 35 70% 10%;
     --popover-foreground: 40 80% 90%;
 
-    --primary: 35 80% 50%;
+    --primary: 215 80% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 280 60% 50%;
@@ -81,7 +81,7 @@
     --ring: 35 80% 60%;
     --sidebar-background: 35 80% 20%;
     --sidebar-foreground: 40 90% 95%;
-    --sidebar-primary: 35 90% 60%;
+    --sidebar-primary: 215 90% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 280 60% 50%;
     --sidebar-accent-foreground: 0 0% 100%;

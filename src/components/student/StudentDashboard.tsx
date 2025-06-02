@@ -69,7 +69,7 @@ export function StudentDashboard() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Ma Progression</CardTitle>
-            <Target className="h-4 w-4 text-amber-700" />
+            <Target className="h-4 w-4 text-blue-700" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{progressData.overallProgress}%</div>
@@ -81,7 +81,7 @@ export function StudentDashboard() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Mon Étape Actuelle</CardTitle>
-            <Clock className="h-4 w-4 text-orange-600" />
+            <Clock className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
             <div className="text-lg font-bold">Business Model Canvas</div>
@@ -149,7 +149,7 @@ export function StudentDashboard() {
             {recentActivities.map((activity) => (
               <div key={activity.id} className="flex items-center space-x-4 p-3 bg-gray-50 rounded-lg">
                 <div className={`w-2 h-2 rounded-full ${
-                  activity.type === 'deliverable' ? 'bg-amber-600' :
+                  activity.type === 'deliverable' ? 'bg-blue-600' :
                   activity.type === 'feedback' ? 'bg-green-500' : 'bg-purple-500'
                 }`} />
                 <div className="flex-1">

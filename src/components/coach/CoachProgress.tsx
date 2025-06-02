@@ -208,12 +208,12 @@ export function CoachProgress() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-amber-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-blue-500"></div>
                     <span className="text-sm">En progression</span>
                   </div>
                   <span className="text-sm font-medium">{studentsOnTrack}</span>
                 </div>
-                <Progress value={(studentsOnTrack / sortedStudents.length) * 100} className="h-2 bg-amber-100" />
+                <Progress value={(studentsOnTrack / sortedStudents.length) * 100} className="h-2 bg-blue-100" />
               </div>
               
               <div className="space-y-2">
@@ -375,8 +375,8 @@ export function CoachProgress() {
                           <TableRow key={student.id}>
                             <TableCell>
                               <div className="flex items-center gap-2">
-                                <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
-                                  <User className="h-4 w-4 text-amber-700" />
+                                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                  <User className="h-4 w-4 text-blue-700" />
                                 </div>
                                 <div>
                                   <p className="text-sm font-medium">{student.firstName} {student.lastName}</p>
@@ -391,7 +391,7 @@ export function CoachProgress() {
                                 </div>
                                 <Progress 
                                   value={student.progress || 0} 
-                                  className={`h-2 ${(student.progress || 0) < 40 ? 'bg-red-100' : (student.progress || 0) < 75 ? 'bg-amber-100' : 'bg-green-100'}`}
+                                  className={`h-2 ${(student.progress || 0) < 40 ? 'bg-red-100' : (student.progress || 0) < 75 ? 'bg-blue-100' : 'bg-green-100'}`}
                                 />
                               </div>
                             </TableCell>
@@ -406,7 +406,7 @@ export function CoachProgress() {
                                   En difficulté
                                 </Badge>
                               ) : (student.progress || 0) < 75 ? (
-                                <Badge variant="outline" className="bg-amber-50 text-amber-700">
+                                <Badge variant="outline" className="bg-blue-50 text-blue-700">
                                   <Clock className="h-3 w-3 mr-1" />
                                   En progression
                                 </Badge>
@@ -456,8 +456,8 @@ export function CoachProgress() {
                         <TableRow key={index}>
                           <TableCell>
                             <div className="flex items-center gap-2">
-                              <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
-                                <BarChart3 className="h-4 w-4 text-amber-700" />
+                              <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                <BarChart3 className="h-4 w-4 text-blue-700" />
                               </div>
                               <p className="font-medium text-sm">{module.module}</p>
                             </div>
@@ -473,7 +473,7 @@ export function CoachProgress() {
                                   style={{ width: `${module.complété}%` }}
                                 ></div>
                                 <div 
-                                  className="bg-amber-400 h-full" 
+                                  className="bg-blue-400 h-full" 
                                   style={{ width: `${module.en_cours}%` }}
                                 ></div>
                                 <div 
@@ -507,7 +507,7 @@ export function CoachProgress() {
                                 Facile
                               </Badge>
                             ) : index < 4 ? (
-                              <Badge variant="outline" className="bg-amber-50 text-amber-700">
+                              <Badge variant="outline" className="bg-blue-50 text-blue-700">
                                 Moyen
                               </Badge>
                             ) : (
@@ -566,7 +566,7 @@ export function CoachProgress() {
                                 {new Date(deadline.dueDate).toLocaleDateString('fr-FR')} à {new Date(deadline.dueDate).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}
                                 <div className="text-xs mt-1">
                                   {diffDays > 0 ? (
-                                    <span className={`${diffDays <= 3 ? 'text-red-500' : diffDays <= 7 ? 'text-amber-500' : 'text-green-500'}`}>
+                                    <span className={`${diffDays <= 3 ? 'text-red-500' : diffDays <= 7 ? 'text-blue-500' : 'text-green-500'}`}>
                                       Dans {diffDays} jour{diffDays > 1 ? 's' : ''}
                                     </span>
                                   ) : diffDays === 0 ? (
@@ -581,7 +581,7 @@ export function CoachProgress() {
                                 {diffDays > 7 ? (
                                   <Badge variant="outline" className="bg-green-50 text-green-700">À venir</Badge>
                                 ) : diffDays > 0 ? (
-                                  <Badge variant="outline" className="bg-amber-50 text-amber-700">Proche</Badge>
+                                  <Badge variant="outline" className="bg-blue-50 text-blue-700">Proche</Badge>
                                 ) : diffDays === 0 ? (
                                   <Badge variant="outline" className="bg-red-50 text-red-700">Aujourd'hui</Badge>
                                 ) : (

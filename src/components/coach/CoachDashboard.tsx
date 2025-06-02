@@ -283,7 +283,7 @@ export function CoachDashboard() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-sm">
                   <div className="font-medium">Thomas L. - Plan Marketing</div>
-                  <div className="text-amber-500 text-xs">1 jour</div>
+                  <div className="text-blue-500 text-xs">1 jour</div>
                 </div>
                 <Progress value={65} className="h-1" />
               </div>
@@ -304,8 +304,8 @@ export function CoachDashboard() {
           <CardContent>
             <div className="space-y-4">
               <div className="flex items-start gap-3 pb-2 border-b">
-                <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
-                  <User className="h-4 w-4 text-amber-700" />
+                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                  <User className="h-4 w-4 text-blue-700" />
                 </div>
                 <div>
                   <div className="flex justify-between w-full">
@@ -318,8 +318,8 @@ export function CoachDashboard() {
                 </div>
               </div>
               <div className="flex items-start gap-3 pb-2 border-b">
-                <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
-                  <User className="h-4 w-4 text-amber-700" />
+                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                  <User className="h-4 w-4 text-blue-700" />
                 </div>
                 <div>
                   <div className="flex justify-between w-full">
@@ -332,8 +332,8 @@ export function CoachDashboard() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
-                  <User className="h-4 w-4 text-amber-700" />
+                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                  <User className="h-4 w-4 text-blue-700" />
                 </div>
                 <div>
                   <div className="flex justify-between w-full">
@@ -386,7 +386,7 @@ export function CoachDashboard() {
                     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
                     
                     // Déterminer la couleur et le texte en fonction des jours restants
-                    let timeColor = "text-amber-600";
+                    let timeColor = "text-blue-600";
                     let timeText = `Dans ${diffDays} jours`;
                     
                     if (diffDays <= 0) {
@@ -396,12 +396,12 @@ export function CoachDashboard() {
                       timeColor = "text-red-500";
                       timeText = "Demain";
                     } else if (diffDays <= 3) {
-                      timeColor = "text-amber-500";
+                      timeColor = "text-blue-500";
                     } else if (diffDays <= 7) {
                       timeColor = "text-emerald-500";
                       timeText = "Dans 1 semaine";
                     } else if (diffDays <= 14) {
-                      timeColor = "text-amber-600";
+                      timeColor = "text-blue-600";
                       timeText = "Dans 2 semaines";
                     }
                     

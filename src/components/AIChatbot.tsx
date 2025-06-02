@@ -146,7 +146,7 @@ export function AIChatbot() {
     return (
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-amber-600 hover:bg-amber-700 shadow-lg z-50"
+        className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-blue-600 hover:bg-blue-700 shadow-lg z-50"
         size="icon"
       >
         <MessageCircle className="h-6 w-6" />
@@ -182,15 +182,15 @@ export function AIChatbot() {
                 }`}
               >
                 {message.sender === "ai" && (
-                  <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
-                    <Bot className="h-4 w-4 text-amber-700" />
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                    <Bot className="h-4 w-4 text-blue-700" />
                   </div>
                 )}
                 <div
                   className={`max-w-[80%] p-3 rounded-lg overflow-y-auto ${
                     message.sender === "user"
-                      ? "bg-amber-700 text-white"
-                      : "bg-amber-50 text-amber-900"
+                      ? "bg-blue-600 text-white"
+                      : "bg-blue-50 text-blue-900"
                   }`}
                   style={{ maxHeight: '200px' }} // Limite la hauteur max des bulles
                 >
@@ -200,7 +200,7 @@ export function AIChatbot() {
                   </p>
                 </div>
                 {message.sender === "user" && (
-                  <div className="w-8 h-8 bg-amber-700 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center">
                     <User className="h-4 w-4 text-white" />
                   </div>
                 )}
@@ -208,11 +208,11 @@ export function AIChatbot() {
             ))}
             {isLoading && (
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
-                  <Bot className="h-4 w-4 text-amber-700 animate-pulse" />
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Bot className="h-4 w-4 text-blue-700 animate-pulse" />
                 </div>
-                <div className="bg-amber-50 p-3 rounded-lg">
-                  <p className="text-sm text-amber-900">Je réfléchis...</p>
+                <div className="bg-blue-50 p-3 rounded-lg">
+                  <p className="text-sm text-blue-900">Je réfléchis...</p>
                 </div>
               </div>
             )}
@@ -221,11 +221,11 @@ export function AIChatbot() {
         
         <div className="p-2 border-t">
           {/* Boutons de réponse rapide */}
-          <div className="flex flex-wrap gap-1 mb-2 pb-2 border-b border-amber-100">
+          <div className="flex flex-wrap gap-1 mb-2 pb-2 border-b border-blue-100">
             <Button
               variant="outline"
               size="sm"
-              className="text-xs text-amber-700 border-amber-200 hover:bg-amber-50 hover:text-amber-800"
+              className="text-xs text-blue-700 border-blue-200 hover:bg-blue-50 hover:text-blue-800"
               onClick={() => setInput("Comment structurer mon business model ?")}
               disabled={isLoading}
             >
@@ -234,7 +234,7 @@ export function AIChatbot() {
             <Button
               variant="outline"
               size="sm"
-              className="text-xs text-amber-700 border-amber-200 hover:bg-amber-50 hover:text-amber-800"
+              className="text-xs text-blue-700 border-blue-200 hover:bg-blue-50 hover:text-blue-800"
               onClick={() => setInput("Qu'est-ce qu'un MVP ?")}
               disabled={isLoading}
             >
@@ -243,7 +243,7 @@ export function AIChatbot() {
             <Button
               variant="outline"
               size="sm"
-              className="text-xs text-amber-700 border-amber-200 hover:bg-amber-50 hover:text-amber-800"
+              className="text-xs text-blue-700 border-blue-200 hover:bg-blue-50 hover:text-blue-800"
               onClick={() => setInput("Comment trouver mes premiers clients ?")}
               disabled={isLoading}
             >
@@ -252,7 +252,7 @@ export function AIChatbot() {
             <Button
               variant="outline"
               size="sm"
-              className="text-xs text-amber-700 border-amber-200 hover:bg-amber-50 hover:text-amber-800"
+              className="text-xs text-blue-700 border-blue-200 hover:bg-blue-50 hover:text-blue-800"
               onClick={() => setInput("Comment pitcher mon projet ?")}
               disabled={isLoading}
             >
@@ -268,13 +268,13 @@ export function AIChatbot() {
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={handleKeyPress}
               disabled={isLoading}
-              className="h-10 border-amber-200 focus-visible:ring-amber-500"
+              className="h-10 border-blue-200 focus-visible:ring-blue-500"
             />
             <Button
               onClick={sendMessage}
               disabled={isLoading || !input.trim()}
               size="icon"
-              className="h-10 w-10 bg-amber-700 hover:bg-amber-800"
+              className="h-10 w-10 bg-blue-600 hover:bg-blue-700"
             >
               <Send className="h-4 w-4" />
             </Button>

@@ -24,7 +24,7 @@ const getNotificationIcon = (type: string) => {
     case 'request_rejected':
       return <X className="h-5 w-5 text-red-500" />;
     case 'new_comment':
-      return <BellRing className="h-5 w-5 text-amber-600" />;
+      return <BellRing className="h-5 w-5 text-blue-600" />;
     default:
       return <Bell className="h-5 w-5 text-gray-500" />;
   }
@@ -108,7 +108,7 @@ export const Notifications: React.FC<NotificationProps> = ({ className, userId }
                 {userNotifications.map((notification) => (
                   <li 
                     key={notification.id} 
-                    className={`p-3 hover:bg-gray-50 transition-colors duration-150 ${!notification.isRead ? 'bg-amber-50' : ''}`}
+                    className={`p-3 hover:bg-gray-50 transition-colors duration-150 ${!notification.isRead ? 'bg-blue-50' : ''}`}
                   >
                     <div className="flex items-start">
                       <div className="flex-shrink-0 mr-3 mt-1">
@@ -125,7 +125,7 @@ export const Notifications: React.FC<NotificationProps> = ({ className, userId }
                         {!notification.isRead && (
                           <button
                             onClick={() => handleMarkAsRead(notification.id)}
-                            className="text-xs text-amber-600 hover:text-amber-800 focus:outline-none"
+                            className="text-xs text-blue-600 hover:text-blue-800 focus:outline-none"
                             aria-label="Marquer comme lu"
                           >
                             Marquer lu

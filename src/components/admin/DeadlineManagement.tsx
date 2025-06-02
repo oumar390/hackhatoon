@@ -132,7 +132,7 @@ export function DeadlineManagement() {
     switch (status) {
       case "completed": return <CheckCircle className="h-4 w-4 text-green-600" />;
       case "overdue": return <AlertTriangle className="h-4 w-4 text-red-600" />;
-      default: return <CalendarIcon className="h-4 w-4 text-amber-700" />;
+      default: return <CalendarIcon className="h-4 w-4 text-blue-700" />;
     }
   };
 
@@ -157,7 +157,7 @@ export function DeadlineManagement() {
         <CardHeader>
           <div className="flex justify-between items-center">
             <div>
-              <CardTitle className="text-amber-900 flex items-center gap-2">
+              <CardTitle className="text-blue-900 flex items-center gap-2">
                 <CalendarIcon className="h-5 w-5" />
                 Gestion des Deadlines
               </CardTitle>
@@ -165,7 +165,7 @@ export function DeadlineManagement() {
             </div>
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <Button className="bg-amber-700 hover:bg-amber-800" onClick={resetForm}>
+                <Button className="bg-blue-700 hover:bg-blue-800" onClick={resetForm}>
                   <Plus className="mr-2 h-4 w-4" />
                   Nouvelle deadline
                 </Button>
@@ -280,7 +280,7 @@ export function DeadlineManagement() {
                     <Button type="button" variant="outline" onClick={resetForm}>
                       Annuler
                     </Button>
-                    <Button type="submit" className="bg-amber-700 hover:bg-amber-800">
+                    <Button type="submit" className="bg-blue-700 hover:bg-blue-800">
                       {editingDeadline ? "Modifier" : "Créer"}
                     </Button>
                   </div>

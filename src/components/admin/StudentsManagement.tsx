@@ -84,11 +84,11 @@ export function StudentsManagement() {
 
   return (
     <div className="space-y-6">
-      <Card className="border-amber-200">
+      <Card className="border-blue-200">
         <CardHeader>
           <div className="flex justify-between items-center">
             <div>
-              <CardTitle className="text-amber-900 flex items-center gap-2">
+              <CardTitle className="text-blue-900 flex items-center gap-2">
                 <Users className="h-5 w-5" />
                 Gestion des Étudiants
               </CardTitle>
@@ -96,7 +96,7 @@ export function StudentsManagement() {
             </div>
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <Button className="bg-amber-700 hover:bg-amber-800" onClick={() => {
+                <Button className="bg-blue-700 hover:bg-blue-800" onClick={() => {
                   setEditingStudent(null);
                   setFormData({ name: "", email: "", status: "active", pathway: "pre-incubation" });
                 }}>
@@ -159,7 +159,7 @@ export function StudentsManagement() {
                     <Button type="button" variant="outline" onClick={() => setIsDialogOpen(false)}>
                       Annuler
                     </Button>
-                    <Button type="submit" className="bg-amber-700 hover:bg-amber-800">
+                    <Button type="submit" className="bg-blue-700 hover:bg-blue-800">
                       {editingStudent ? "Modifier" : "Créer"}
                     </Button>
                   </div>

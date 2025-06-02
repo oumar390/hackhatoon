@@ -144,7 +144,7 @@ export function ProductivityTools() {
           >
             <CardHeader className="pb-3">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 bg-primary-50 p-2 rounded-md">
+                <div className="flex-shrink-0 bg-blue-50 p-2 rounded-md">
                   {tool.icon}
                 </div>
                 <div>

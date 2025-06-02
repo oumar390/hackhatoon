@@ -124,7 +124,7 @@ export function CoursesManagement() {
         <CardHeader>
           <div className="flex justify-between items-center">
             <div>
-              <CardTitle className="text-amber-900 flex items-center gap-2">
+              <CardTitle className="text-blue-700 flex items-center gap-2">
                 <Target className="h-5 w-5" />
                 Gestion des Parcours
               </CardTitle>
@@ -132,7 +132,7 @@ export function CoursesManagement() {
             </div>
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <Button className="bg-amber-600 hover:bg-amber-700" onClick={() => {
+                <Button className="bg-blue-600 hover:bg-blue-700" onClick={() => {
                   setEditingCourse(null);
                   setFormData({ title: "", description: "", pathway: "pre-incubation", duration: "", objectives: [], status: "active" });
                 }}>
@@ -220,7 +220,7 @@ export function CoursesManagement() {
                     <Button type="button" variant="outline" onClick={() => setIsDialogOpen(false)}>
                       Annuler
                     </Button>
-                    <Button type="submit" className="bg-amber-600 hover:bg-amber-700">
+                    <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
                       {editingCourse ? "Modifier" : "Créer"}
                     </Button>
                   </div>

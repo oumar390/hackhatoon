@@ -41,9 +41,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-green-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-amber-200">
+      <header className="bg-white shadow-sm border-b border-blue-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
@@ -53,15 +53,15 @@ const Index = () => {
                 className="h-10 w-10 rounded-lg"
               />
               <div>
-                <h1 className="text-xl font-bold text-amber-900">Knowledge Share Platform</h1>
-                <p className="text-xs text-amber-700">Engage • Educate • Sphere</p>
+                <h1 className="text-xl font-bold text-blue-800">Knowledge Share Platform</h1>
+                <p className="text-xs text-blue-700">Engage • Educate • Sphere</p>
               </div>
             </div>
             
             <div className="flex items-center space-x-4">
               <Button 
                 variant="outline" 
-                className="border-amber-200 text-amber-800 hover:bg-amber-50"
+                className="border-blue-200 text-blue-700 hover:bg-blue-50"
               >
                 Se connecter
               </Button>
@@ -79,11 +79,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold text-amber-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-blue-800 mb-6">
             Accompagnez vos projets 
             <span className="text-green-600"> étudiants</span>
           </h2>
-          <p className="text-xl text-amber-700 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-700 mb-8 max-w-2xl mx-auto">
             Plateforme complète de suivi pédagogique pour l'enseignement supérieur. 
             Parcours structurés, coaching personnalisé et assistant IA intégré.
           </p>
@@ -100,7 +100,7 @@ const Index = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-amber-300 text-amber-800 hover:bg-amber-50"
+              className="border-blue-300 text-blue-700 hover:bg-blue-50"
             >
               <BookOpen className="mr-2 h-5 w-5" />
               Découvrir les parcours
@@ -112,22 +112,22 @@ const Index = () => {
       {/* Features Grid */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center text-amber-900 mb-12">
+          <h3 className="text-3xl font-bold text-center text-blue-800 mb-12">
             Fonctionnalités principales
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow border-amber-200">
+              <Card key={index} className="hover:shadow-lg transition-shadow border-blue-200">
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <div className="p-2 bg-green-100 rounded-lg text-green-600">
                       {feature.icon}
                     </div>
-                    <CardTitle className="text-lg text-amber-900">{feature.title}</CardTitle>
+                    <CardTitle className="text-lg text-blue-800">{feature.title}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-amber-700">{feature.description}</CardDescription>
+                  <CardDescription className="text-blue-700">{feature.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -136,7 +136,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-amber-900 text-white py-12 px-4">
+      <footer className="bg-blue-800 text-white py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
             <img 
@@ -146,10 +146,10 @@ const Index = () => {
             />
             <h4 className="text-xl font-bold">Knowledge Share Platform</h4>
           </div>
-          <p className="text-amber-200 mb-6">
+          <p className="text-blue-200 mb-6">
             Plateforme pédagogique pour l'accompagnement de projets étudiants
           </p>
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-amber-200">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-blue-200">
             <a href="#" className="hover:text-white transition-colors">À propos</a>
             <a href="#" className="hover:text-white transition-colors">Documentation</a>
             <a href="#" className="hover:text-white transition-colors">Support</a>

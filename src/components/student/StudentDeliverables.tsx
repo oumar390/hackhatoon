@@ -90,7 +90,7 @@ export function StudentDeliverables() {
       case "submitted":
         return <Badge className="bg-green-100 text-green-800">Soumis</Badge>;
       case "in-progress":
-        return <Badge className="bg-orange-100 text-orange-800">En cours</Badge>;
+        return <Badge className="bg-blue-100 text-blue-800">En cours</Badge>;
       case "pending":
         return <Badge variant="outline">À faire</Badge>;
       case "late":
@@ -104,8 +104,8 @@ export function StudentDeliverables() {
     if (!grade) return null;
     
     const colorClass = grade.startsWith('A') ? 'bg-green-500' : 
-                      grade.startsWith('B') ? 'bg-amber-600' : 
-                      grade.startsWith('C') ? 'bg-orange-500' : 'bg-red-500';
+                      grade.startsWith('B') ? 'bg-blue-600' : 
+                      grade.startsWith('C') ? 'bg-blue-500' : 'bg-red-500';
     
     return <Badge className={`${colorClass} text-white`}>{grade}</Badge>;
   };
@@ -187,12 +187,12 @@ export function StudentDeliverables() {
               </div>
 
               {deliverable.feedback && (
-                <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
                   <div className="flex items-center space-x-2 mb-2">
-                    <MessageSquare className="h-4 w-4 text-amber-700" />
-                    <span className="font-medium text-amber-800">Feedback du Coach</span>
+                    <MessageSquare className="h-4 w-4 text-blue-700" />
+                    <span className="font-medium text-blue-700">Feedback du Coach</span>
                   </div>
-                  <p className="text-sm text-amber-700">{deliverable.feedback}</p>
+                  <p className="text-sm text-blue-700">{deliverable.feedback}</p>
                 </div>
               )}
 

@@ -40,21 +40,21 @@ export function DashboardHeader({ userRole }: DashboardHeaderProps) {
   };
 
   return (
-    <header className="bg-white border-b border-amber-200 px-6 py-4">
+    <header className="bg-white border-b border-blue-200 px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <h1 className="text-2xl font-bold text-slate-900">Dashboard</h1>
-          <Badge variant="secondary" className="bg-amber-100 text-amber-800">
+          <Badge variant="secondary" className="bg-blue-100 text-blue-800">
             {getRoleLabel()}
           </Badge>
         </div>
         
         <div className="flex items-center space-x-4">
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-amber-700 h-4 w-4" />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-600 h-4 w-4" />
             <Input 
               placeholder="Rechercher..." 
-              className="pl-10 w-80 border-amber-200 focus:border-amber-600"
+              className="pl-10 w-80 border-blue-200 focus:border-blue-500"
             />
           </div>
           
@@ -67,7 +67,7 @@ export function DashboardHeader({ userRole }: DashboardHeaderProps) {
                 <span>{user?.name || "Utilisateur"}</span>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-white border-amber-200">
+            <DropdownMenuContent className="bg-white border-blue-200">
               <DropdownMenuItem className="text-slate-700">
                 <User className="mr-2 h-4 w-4" />
                 Profil
